@@ -10,7 +10,8 @@
 			<div class="row m-t-xs">
 				<div class="title">竞赛列表</div>
 				<div class="operation">
-					<span class="create"><i class="icon icon-plus"></i>添加</span>
+					<a href="javascript:void(0);" class="delete"><i class="icon icon-bin"></i>批量删除</a>
+					<a href="<%=basePath %>race_baseInfoSave" class="create"><i class="icon icon-plus"></i>添加</a>
 				</div>
 			</div>
 			
@@ -22,7 +23,7 @@
 							<th class="col-2">竞赛名称</th>
 							<th class="col-1">竞赛级别</th>
 							<th class="col-2">竞赛方式</th>
-							<th class="col-1">参赛人数范围</th>
+							<th class="col-1">人数范围</th>
 							<th class="col-3">参赛对象</th>
 							<th class="col-2">操作</th>
 						</tr>						
@@ -36,7 +37,7 @@
 							<td class="text-center col-1">5</td>
 							<td class="text-center col-3">具有正式学籍的全日制在校大学生</td>
 							<td class="text-center table-operate col-2">
-								<a href="#">查看</a>
+								<a href="<%=basePath%>race_baseInfoDetail">查看</a>
 								<a href="#">修改</a>
 								<a href="#">删除</a>
 							</td>

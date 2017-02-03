@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+.save-content{
+	display: block;
+	width: 100%;
+	background-color: #ffffff;
+	margin-top: 15px;
+	padding: 15px;
+}

@@ -13,6 +13,7 @@
 .container{
 	position: relative;
 	padding: 30px;
+	height: 101%;
 }
 .breadcrumb{
 	font-size: 0;
@@ -58,9 +59,21 @@
 .operation{
 	float: right;
 }
-.operation .create{
+.operation .delete{
 	display: inline-block;
 	color: #10A6E2;
+	border: 1px solid #10A6E2;
+	padding: 5px 12px;
+	border-radius: 3px;
+	font-size: 14px;
+}
+.operation .delete i{
+	margin-right: 4px;
+}
+.operation .create{
+	display: inline-block;
+	background-color: #10A6E2;
+	color: #ffffff;
 	border: 1px solid #10A6E2;
 	padding: 5px 12px;
 	border-radius: 3px;
@@ -80,4 +93,23 @@
 }
 .hide{
 	display: none;
+}
+.ellipsis{
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+	float: left;
+}
+.v-top{
+	vertical-align: top;
+}
+/* ueditor初始化高度 */
+.ueditorInitHeight{
+	height: 200px;
+}
+/* 返回上一级 */
+.back{
+	cursor: pointer;
 }

@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+.btn{
+	display: inline-block;
+	padding: 8px 12px;
+	border-radius: 3px;
+}
+.btn-primary{
+	background-color: #10A6E2;
+	color: #ffffff;
+}
+.btn-lg{
+	padding: 12px 20px;
+}

@@ -13,15 +13,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta name="keywords" content="项目申报系统，成都大学项目申报系统">
 	<meta name="description" content="项目申报系统，成都大学项目申报系统">
 	<link rel="icon" href="<%=basePath%>/images/logo.png" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/font.css" />
-	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/common.css" />
-	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/header.css" />
-	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/margin.css" />
-	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/grid.css" />
-	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/text.css" />
-	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/table.css" />
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/base/font.css" />
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/base/common.css" />
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/base/header.css" />
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/base/reset.css" />
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/base/margin.css" />
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/base/grid.css" />
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/base/text.css" />
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/base/table.css" />
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/base/form.css" />
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/base/btn.css" />
 	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/pages/index.css" />
+	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/pages/race.css" />
 	<!-- <link rel="stylesheet" type="text/css" href="/Applys/plugins/bootstrap/css/bootstrap.css" /> -->
 </head>
 <body>

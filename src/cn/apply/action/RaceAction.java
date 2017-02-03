@@ -20,4 +20,22 @@ public class RaceAction extends BaseAction<RaceBaseInfo> {
 	public String baseInfoList() throws Exception {
 		return "baseInfoList";
 	}
+	
+	/**
+	 * 竞赛基本信息保存
+	 * @return
+	 * @throws Exception
+	 */
+	public String baseInfoSave() throws Exception {
+		return "baseInfoSave";
+	}
+	
+	/**
+	 * 竞赛基本信息保存
+	 * @return
+	 * @throws Exception
+	 */
+	public String baseInfoDetail() throws Exception {
+		return "baseInfoDetail";
+	}
 }
