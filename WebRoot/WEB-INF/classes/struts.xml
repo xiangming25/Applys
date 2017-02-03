@@ -33,6 +33,8 @@
 		<!-- 竞赛信息 -->
 		<action name="race_*" class="raceAction" method="{1}">
 			<result name="baseInfoList">/WEB-INF/views/race/baseInfoList.jsp</result>
+			<result name="baseInfoSave">/WEB-INF/views/race/baseInfoSave.jsp</result>
+			<result name="baseInfoDetail">/WEB-INF/views/race/baseInfoDetail.jsp</result>
 		</action>
 
         <!-- 用户管理 -->

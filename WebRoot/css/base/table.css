@@ -13,6 +13,7 @@ th{
 }
 td{
 	padding: 8px 12px;
+	line-height: 1.5;
 }
 .table-operate a{
 	display: inline-block;

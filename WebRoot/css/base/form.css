@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+.form-group{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.form-group label{
+	display: inline-block;
+	padding-right: 15px;
+}
+.form-group .input-group{
+	display: inline-block;
+}
+.form-group .input-group input{
+	display: inline-block;
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #d3d3d3;
+	padding: 8px 12px;
+	outline: none;
+}
+.form-group .input-group select{
+	display: inline-block;
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #d3d3d3;
+	padding: 8px 12px;
+	outline: none;
+}
+
+
