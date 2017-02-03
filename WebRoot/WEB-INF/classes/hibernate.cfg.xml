@@ -1,0 +1,43 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+
+	<!-- 一、 数据库连接信息 -->
+	<property name="dialect">
+		org.hibernate.dialect.MySQL5InnoDBDialect
+	</property>
+	<property name="connection.driver_class">
+		com.mysql.jdbc.Driver
+	</property>
+	<!-- <property name="connection.url">
+		jdbc:mysql://120.27.94.197:3306/apply?characterEncoding=utf8
+		</property> -->
+	<property name="connection.url">
+		jdbc:mysql://127.0.0.1:3306/apply
+	</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">stevem</property>
+
+	<!-- 二、 其它配置 -->
+	<property name="show_sql">true</property>
+	<property name="hbm2ddl.auto">update</property>
+
+	<!-- 三、 导入映射文件 -->
+	<mapping resource="cn/apply/domain/Academy.hbm.xml" />
+	<mapping resource="cn/apply/domain/AgreeMoneySuggest.hbm.xml" />
+	<mapping resource="cn/apply/domain/ApplyMoney.hbm.xml" />
+	<mapping resource="cn/apply/domain/Award.hbm.xml" />
+	<mapping resource="cn/apply/domain/Post.hbm.xml" />
+	<mapping resource="cn/apply/domain/Privilege.hbm.xml" />
+	<mapping resource="cn/apply/domain/RaceBaseInfo.hbm.xml" />
+	<mapping resource="cn/apply/domain/RaceGrade.hbm.xml" />
+	<mapping resource="cn/apply/domain/RaceList.hbm.xml" />
+	<mapping resource="cn/apply/domain/Role.hbm.xml" />
+	<mapping resource="cn/apply/domain/Student.hbm.xml" />
+	<mapping resource="cn/apply/domain/Suggest.hbm.xml" />
+	<mapping resource="cn/apply/domain/User.hbm.xml" />
+</session-factory>
+</hibernate-configuration>

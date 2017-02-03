@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<!-- s配置为开发模式，如果配置文件发生改变，自动刷新服务器，可以直接在网页中使用 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 把扩展名配置为action -->
+	<!-- <constant name="struts.action.extension" value="action" /> -->
+	<!-- 把主题配置为simple -->
+	<constant name="struts.ui.theme" value="simple" />
+	
+	<!-- 设置允许上传的最大文件 -->
+	<constant name="struts.multipart.maxSize" value="1000000000"></constant>
+	<!-- <include file="struts/struts-*.xml"></include> -->
+	
+	
+	<package name="default" namespace="/" extends="struts-default">
+	
+		<!-- 全局的Result配置 -->
+		<global-results>
+			<result name="loginUI">/login.jsp</result>
+			<result name="noPrivilegeError">/noPrivilegeError.jsp</result>
+		</global-results>
+		
+		<!-- 首页 -->
+		<action name="index" class="indexAction" method="index">
+			<result name="index">/WEB-INF/views/index/index.jsp</result>
+		</action>
+		
+		<!-- 竞赛信息 -->
+		<action name="race_*" class="raceAction" method="{1}">
+			<result name="baseInfoList">/WEB-INF/views/race/baseInfoList.jsp</result>
+		</action>
+
+        <!-- 用户管理 -->
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="error">/index.jsp</result>
+			<result name="index">/WEB-INF/views/index/index.jsp</result>
+			<result name="signIn">/WEB-INF/views/index.jsp</result>
+		</action>
+
+	</package>
+
+</struts>

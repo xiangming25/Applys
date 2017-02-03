@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.apply.domain">
+
+    <class name="ApplyMoney" table="applymoney">
+		<id name="id" length="10">
+            <generator class="native"/>
+        </id>
+		<property name="applyMoneyNum" length="10"/>
+		<property name="applyDate" length="30"/>
+		<property name="realUseNum" length="10"/>
+		<property name="title" length="40"/>
+		<property name="status" length="10"/>
+		<property name="content"/>
+		<property name="addStatus" length="10"/>
+		
+		<!-- raceList属性，本类与RaceList的多对一关系 -->
+		<many-to-one name="raceList" class="RaceList" column="raceListId"></many-to-one>
+		
+		<!-- agreeMoneySuggests属性，本类与AgreeMoneySuggest为一对多关系 -->
+		<set name="agreeMoneySuggests" cascade="delete">
+			<key column="applyMoneyId" update="false" ></key>
+			<one-to-many class="AgreeMoneySuggest"/>
+		</set>
+				
+    </class>
+
+</hibernate-mapping>

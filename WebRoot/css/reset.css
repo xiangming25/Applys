@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+html,
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+*{
+	box-sizing: border-box;
+	font-family: "microyahei";
+	font-size: 14px;
+	line-height: 100%;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}

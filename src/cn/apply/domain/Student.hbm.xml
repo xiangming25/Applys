@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.apply.domain">
+
+    <class name="Student" table="student">
+		<id name="id" length="10">
+            <generator class="native"/>
+        </id>
+		<property name="XH" length="30"/>
+		<property name="XM" length="30"/>
+		<property name="XY" length="30"/>
+		
+    </class>
+
+</hibernate-mapping>

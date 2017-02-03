@@ -1,0 +1,38 @@
+.dropdown-menu{
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none;
+}
+.dropdown-menu li a{
+    height: 30px !important;
+    line-height: 30px !important;
+}
+.breadcrumb{
+    margin-bottom: 0;
+}
+.panel-body{
+    background-color: #fff;
+}
+.form-horizontal .form-group,.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.folder{	
+	float:left;
+	padding-right:20px;
+	display:block;
+	width:20px;
+	height:20px;
+	background-image: url("../../../images/folder.gif");	
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.showToolTipDiv{
+	position: absolute;
+	color: #fff;
+	border-radius:5px;
+	background-color: rgba(3,14,14,0.8);
+	text-align: center;
+	line-height: 30px;
+	padding:3px 5px;
+}

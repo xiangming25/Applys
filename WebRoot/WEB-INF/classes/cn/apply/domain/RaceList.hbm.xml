@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.apply.domain">
+
+    <class name="RaceList" table="racelist">
+		<id name="id" length="11">
+            <generator class="native"/>
+        </id>
+		<property name="planGoal" length="2000"/>
+		<property name="raceYear" length="50"/>
+		<property name="raceDate" length="50"/>
+		<property name="status" length="30"/>
+		<property name="agreeMoneyStatus" length="30" />
+		<property name="stuNum" length="30"/>
+		<property name="lastAgreeMoney" length="10"/>
+		<property name="academy" length="50"/>
+		
+		<property name="raceName" length="200"/>
+		<property name="organization" length="200"/>
+		<property name="raceGrade" length="50"/>
+		<property name="organAcademy" length="200"/>
+		<property name="editUserId" length="20"/>
+		
+		<!-- user属性，本类与User多对一关系 -->
+		<many-to-one name="user" class="User" column="userId" lazy="false"></many-to-one>
+		
+		
+		<!-- raceBaseInfo属性，本类与RaceBaseInfo多对一关系 -->
+		<many-to-one name="raceBaseInfo" class="RaceBaseInfo" column="raceBaseInfoId" lazy="false"></many-to-one>								
+				
+		<!-- awards属性，本类与Award为一对多关系 -->
+		<set name="awards" cascade="delete">
+			<key column="raceListId" update="false"></key>
+			<one-to-many class="Award"/>
+		</set>
+		
+		<!-- applyMoneys属性，本类与ApplyMoney为一对多关系 -->
+		<set name="applyMoneys" cascade="delete">
+			<key column="raceListId" update="false" ></key>
+			<one-to-many class="ApplyMoney"/>
+		</set>
+		
+		<!-- suggests属性，本类与Suggest为一对多关系 -->
+		<set name="suggests" cascade="delete">
+			<key column="raceListId" update="false" ></key>
+			<one-to-many class="Suggest"/>
+		</set>
+		
+    </class>
+
+</hibernate-mapping>

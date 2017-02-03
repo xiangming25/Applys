@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.apply.domain">
+
+    <class name="RaceBaseInfo" table="raceBaseInfo">
+		<id name="id" length="11">
+            <generator class="native"/>
+        </id>
+		<property name="raceName" length="30"/>
+		<property name="organization" length="200"/>
+		<property name="raceTime" length="20"/>
+		<property name="grade" length="10"/>
+		<property name="raceWay" length="50"/>
+		<property name="range" length="100"/>
+		<property name="raceInfo" length="5000"/>
+		<property name="stuNumRange" length="128"/>
+		<property name="academy" length="50"/>
+		
+		<!-- raceLists属性，本类与RaceList为一对多关系 -->
+		<set name="raceLists">
+			<key column="raceBaseInfoId" update="false"></key>
+			<one-to-many class="RaceList"/>
+		</set>
+		
+    </class>
+
+</hibernate-mapping>

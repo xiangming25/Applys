@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.apply.domain">
+
+    <class name="User" table="teacher">
+		<id name="id" length="11">
+            <generator class="native"/>
+        </id>        
+		
+		<property name="YHM" length="50"/>
+		<property name="XM" length="50"/>
+		<property name="SZDW" length="50"/>
+		<property name="MM" length="50"/>
+		<property name="ZC" length="50"/>
+		<property name="TEL" length="50"/>
+		<property name="EMAIL" length="50"/>
+		<property name="headImageUrl" length="200"/>
+		<!-- role属性，本类与Role属性的多对一关系 -->
+		<!-- roles属性，本类与Role的多对多 -->
+		<set name="roles" table="user_role" lazy="false">
+			<key column="userId"></key>
+			<many-to-many class="Role" column="roleId"></many-to-many>
+		</set>		
+		
+		<!-- suggests属性，本类与Suggest为一对多关系 -->
+		<set name="suggests">
+			<key column="userId" update="false"></key>
+			<one-to-many class="Suggest"/>
+		</set>
+		
+		
+		<!-- raceLists属性，本类与RaceList为一对多关系 -->
+		<set name="raceLists">
+			<key column="userId" update="false"></key>
+			<one-to-many class="RaceList"/>
+		</set>
+				
+    </class>
+
+</hibernate-mapping>

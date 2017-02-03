@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.apply.domain">
+
+    <class name="Suggest" table="suggest">
+		<id name="id" length="11">
+            <generator class="native"/>
+        </id>
+		<property name="agreeOrNot" length="30"/>
+		<property name="content" length="200"/>
+		<property name="time" length="30"/>
+		<!-- user属性，本类与User多对一关系 -->
+		<many-to-one name="user" class="User" column="userId"></many-to-one>
+		
+				
+		<!-- raceList属性，本类与RaceList多对一关系 -->
+		<many-to-one name="raceList" class="RaceList" column="raceListId"></many-to-one>					
+		
+    </class>
+
+</hibernate-mapping>

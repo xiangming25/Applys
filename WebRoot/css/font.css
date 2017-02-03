@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/Applys/icon_fonts/icomoon.eot?zewl4h');
+  src:  url('/Applys/icon_fonts/icomoon.eot?zewl4h#iefix') format('embedded-opentype'),
+    url('/Applys/icon_fonts/icomoon.ttf?zewl4h') format('truetype'),
+    url('/Applys/icon_fonts/icomoon.woff?zewl4h') format('woff'),
+    url('/Applys/icon_fonts/icomoon.svg?zewl4h#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home2:before {
+  content: "\e901";
+}
+.icon-office:before {
+  content: "\e903";
+}
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-image:before {
+  content: "\e90d";
+}
+.icon-images:before {
+  content: "\e90e";
+}
+.icon-books:before {
+  content: "\e920";
+}
+.icon-file-text:before {
+  content: "\e922";
+}
+.icon-folder:before {
+  content: "\e92f";
+}
+.icon-coin-yen:before {
+  content: "\e93e";
+}
+.icon-mobile2:before {
+  content: "\e959";
+}
+.icon-download:before {
+  content: "\e960";
+}
+.icon-users:before {
+  content: "\e972";
+}
+.icon-user-plus:before {
+  content: "\e973";
+}
+.icon-user-minus:before {
+  content: "\e974";
+}
+.icon-spinner3:before {
+  content: "\e97c";
+}
+.icon-spinner9:before {
+  content: "\e982";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-lock:before {
+  content: "\e98f";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-stats-bars:before {
+  content: "\e99c";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-switch:before {
+  content: "\e9b6";
+}
+.icon-eye:before {
+  content: "\e9ce";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-minus:before {
+  content: "\ea0b";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-arrow-down:before {
+  content: "\ea36";
+}
+
