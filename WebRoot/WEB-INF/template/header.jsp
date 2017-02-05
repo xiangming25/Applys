@@ -63,7 +63,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		<li class="first-li"><a href="<%=basePath%>race_baseInfoList"><i class="icon icon-home2"></i>竞赛基本信息</a></li>
   		<li class="first-li"><a href="<%=basePath%>racegrade_list"><i class="icon icon-home2"></i>竞赛级别管理</a></li>
   		<li class="first-li"><a href="<%=basePath%>user_list"><i class="icon icon-home2"></i>用户管理</a></li>
-  		<li class="first-li"><a href="#"><i class="icon icon-home2"></i>学院管理</a></li>
+  		<li class="first-li"><a href="<%=basePath%>academy_list"><i class="icon icon-home2"></i>学院管理</a></li>
   		<li class="first-li"><a href="#"><i class="icon icon-home2"></i>角色管理</a></li>
   		<li class="first-li"><a href="#"><i class="icon icon-home2"></i>经费管理</a></li>
   		<li class="first-li"><a href="#"><i class="icon icon-home2"></i>获奖管理</a></li>

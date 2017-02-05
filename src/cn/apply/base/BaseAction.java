@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.struts2.ServletActionContext;
 
+import cn.apply.service.AcademyService;
 import cn.apply.service.IndexService;
 import cn.apply.service.RaceGradeService;
 import cn.apply.service.RaceService;
@@ -56,6 +57,9 @@ public abstract class BaseAction<T> extends ActionSupport implements ModelDriven
 	
 	@Resource
 	protected RaceGradeService raceGradeService;
+	
+	@Resource
+	protected AcademyService academyService;
 	
 	
 	

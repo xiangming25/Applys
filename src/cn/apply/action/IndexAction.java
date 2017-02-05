@@ -5,7 +5,6 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 @Scope("prototype")
-@SuppressWarnings("serial")
 public class IndexAction {
 	
 	/**

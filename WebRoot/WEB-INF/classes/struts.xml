@@ -51,6 +51,13 @@
 			<result name="list">/WEB-INF/views/user/userList.jsp</result>
 			<result name="detail">/WEB-INF/views/user/userDetail.jsp</result>
 			<result name="save">/WEB-INF/views/user/userSave.jsp</result>
+			<result name="setRole">/WEB-INF/views/user/setRole.jsp</result>
+		</action>
+		
+		<!-- 学院管理 -->
+		<action name="academy_*" class="academyAction" method="{1}">
+			<result name="list">/WEB-INF/views/academy/academyList.jsp</result>
+			<result name="save">/WEB-INF/views/academy/academySave.jsp</result>
 		</action>
 
 	</package>

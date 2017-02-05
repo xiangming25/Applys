@@ -87,6 +87,15 @@ public class UserAction extends BaseAction<UserVo> {
 		return "save";
 	}
 	
+	/**
+	 * 设置角色
+	 * @return
+	 * @throws Exception
+	 */
+	public String setRole() throws Exception{
+		return "setRole";
+	}
+	
 	/** 首页页面 */
 	public String index() throws Exception {
 		return "index";
