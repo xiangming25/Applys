@@ -66,6 +66,18 @@
 					</div>
 				</div>
 				
+				<div class="form-group">
+					<label class="col-2 text-right v-top">设置角色</label>
+					<div class="input-group col-4">
+						<select multiple="multiple" size="5">
+							<option value="">--请选择角色--</option>
+							<option value="1">教师</option>
+							<option value="2">学院管理员</option>
+							<option value="3">教务处管理员</option>
+						</select>
+					</div>
+				</div>
+				
 				
 				<div class="form-group">
 					<label class="col-2 text-right v-top">&nbsp;</label>

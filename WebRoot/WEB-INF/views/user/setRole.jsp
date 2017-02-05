@@ -17,7 +17,7 @@
 			<!-- 保存信息内容部分 -->
 			<div class="save-content">
 				<div class="form-group">
-					<label class="col-2 text-right">所在学院</label>
+					<label class="col-2 text-right v-top">设置角色</label>
 					<div class="input-group col-4">
 						<select multiple="multiple" size="5">
 							<option value="">--请选择角色--</option>
