@@ -60,6 +60,33 @@ public class UserAction extends BaseAction<UserVo> {
 		return "signIn";
 	}
 	
+	/**
+	 * 用户列表
+	 * @return
+	 * @throws Exception
+	 */
+	public String list() throws Exception {
+		return "list";
+	}
+	
+	/**
+	 * 用户信息详情
+	 * @return
+	 * @throws Exception
+	 */
+	public String detail() throws Exception {
+		return "detail";
+	}
+	
+	/**
+	 * 保存用户
+	 * @return
+	 * @throws Exception
+	 */
+	public String save() throws Exception{
+		return "save";
+	}
+	
 	/** 首页页面 */
 	public String index() throws Exception {
 		return "index";

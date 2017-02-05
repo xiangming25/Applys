@@ -36,12 +36,21 @@
 			<result name="baseInfoSave">/WEB-INF/views/race/baseInfoSave.jsp</result>
 			<result name="baseInfoDetail">/WEB-INF/views/race/baseInfoDetail.jsp</result>
 		</action>
+		
+		<!-- 竞赛等级 -->
+		<action name="racegrade_*" class="raceGradeAction" method="{1}">
+			<result name="list">/WEB-INF/views/raceGrade/raceGradeList.jsp</result>
+			<result name="detail">/WEB-INF/views/raceGrade/raceGradeDetail.jsp</result>
+			<result name="save">/WEB-INF/views/raceGrade/raceGradeSave.jsp</result>
+		</action>
 
         <!-- 用户管理 -->
 		<action name="user_*" class="userAction" method="{1}">
 			<result name="error">/index.jsp</result>
-			<result name="index">/WEB-INF/views/index/index.jsp</result>
 			<result name="signIn">/WEB-INF/views/index.jsp</result>
+			<result name="list">/WEB-INF/views/user/userList.jsp</result>
+			<result name="detail">/WEB-INF/views/user/userDetail.jsp</result>
+			<result name="save">/WEB-INF/views/user/userSave.jsp</result>
 		</action>
 
 	</package>

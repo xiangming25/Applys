@@ -10,6 +10,8 @@ import javax.servlet.http.HttpSession;
 import org.apache.struts2.ServletActionContext;
 
 import cn.apply.service.IndexService;
+import cn.apply.service.RaceGradeService;
+import cn.apply.service.RaceService;
 import cn.apply.service.UserService;
 
 import com.opensymphony.xwork2.ActionSupport;
@@ -48,6 +50,12 @@ public abstract class BaseAction<T> extends ActionSupport implements ModelDriven
 	
 	@Resource
 	protected IndexService indexService;
+	
+	@Resource
+	protected RaceService raceService;
+	
+	@Resource
+	protected RaceGradeService raceGradeService;
 	
 	
 	

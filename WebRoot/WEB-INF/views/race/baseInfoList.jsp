@@ -10,6 +10,10 @@
 			<div class="row m-t-xs">
 				<div class="title">竞赛列表</div>
 				<div class="operation">
+					<div class="search-group">
+						<input type="text" placeholder="请输入查询内容" />
+						<button type="button"><i class="icon icon-search"></i>搜索</button>
+					</div>
 					<a href="javascript:void(0);" class="delete"><i class="icon icon-bin"></i>批量删除</a>
 					<a href="<%=basePath %>race_baseInfoSave" class="create"><i class="icon icon-plus"></i>添加</a>
 				</div>
@@ -29,6 +33,34 @@
 						</tr>						
 					</thead>
 					<tbody>
+						<tr>
+							<td class="text-center col-1"><input type="checkbox" name="checkbox" /></td>
+							<td class="text-center col-2">2016年第九届全国大学生信息安全竞赛</td>
+							<td class="text-center col-1">国家级</td>
+							<td class="text-center col-2">团体赛</td>
+							<td class="text-center col-1">5</td>
+							<td class="text-center col-3">具有正式学籍的全日制在校大学生</td>
+							<td class="text-center table-operate col-2">
+								<a href="<%=basePath%>race_baseInfoDetail">查看</a>
+								<a href="#">修改</a>
+								<a href="#">删除</a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td class="text-center col-1"><input type="checkbox" name="checkbox" /></td>
+							<td class="text-center col-2">2016年第九届全国大学生信息安全竞赛</td>
+							<td class="text-center col-1">国家级</td>
+							<td class="text-center col-2">团体赛</td>
+							<td class="text-center col-1">5</td>
+							<td class="text-center col-3">具有正式学籍的全日制在校大学生</td>
+							<td class="text-center table-operate col-2">
+								<a href="<%=basePath%>race_baseInfoDetail">查看</a>
+								<a href="#">修改</a>
+								<a href="#">删除</a>
+							</td>
+						</tr>
+						
 						<tr>
 							<td class="text-center col-1"><input type="checkbox" name="checkbox" /></td>
 							<td class="text-center col-2">2016年第九届全国大学生信息安全竞赛</td>
