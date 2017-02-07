@@ -59,6 +59,12 @@
 			<result name="list">/WEB-INF/views/academy/academyList.jsp</result>
 			<result name="save">/WEB-INF/views/academy/academySave.jsp</result>
 		</action>
+		
+		<!-- 角色管理 -->
+		<action name="role_*" class="roleAction" method="{1}">
+			<result name="list">/WEB-INF/views/role/roleList.jsp</result>
+			<result name="save">/WEB-INF/views/role/roleSave.jsp</result>
+		</action>
 
 	</package>
 

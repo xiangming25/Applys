@@ -1,8 +1,9 @@
 package cn.apply.service;
 
 import cn.apply.base.BaseService;
-import cn.apply.domain.RaceBaseInfo;
+import cn.apply.domain.RaceGrade;
+import cn.apply.domain.RaceList;
 
-public interface RaceService extends BaseService<RaceBaseInfo> {
+public interface RaceService extends BaseService<RaceList> {
 
 }

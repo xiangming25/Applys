@@ -3011,7 +3011,7 @@ var domUtils = dom.domUtils = {
         if(filter && utils.isString(filter)){
            var className = filter;
            filter =  function(node){return domUtils.hasClass(node,className)}
-        }
+        };
         name = utils.trim(name).replace(/[ ]{2,}/g,' ').split(' ');
         var arr = [];
         for(var n = 0,ni;ni=name[n++];){
@@ -7268,7 +7268,8 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
                 html = this.body.innerHTML.replace(/[\n\r]/g, '');//ie要先去了\n在处理
             html = html.replace(/<(p|div)[^>]*>(<br\/?>|&nbsp;)<\/\1>/gi, '\n')
                 .replace(/<br\/?>/gi, '\n')
-                .replace(/<[^>/]+>/g, '')
+                //.replace(/<[^>/]+>/g, '')
+                .replace(/<[^>\/]+>/g, '')
                 .replace(/(\n)?<\/([^>]+)>/g, function (a, b, c) {
                     return dtd.$block[c] ? '\n' : b ? b : '';
                 });

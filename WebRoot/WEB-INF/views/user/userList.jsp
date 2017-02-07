@@ -41,8 +41,8 @@
 							<td class="text-center col-2">13812345678</td>
 							<td class="text-center col-2">xiangming25@163.com</td>
 							<td class="text-center table-operate col-3">
-								<%-- <a href="<%=basePath%>user_detail">查看</a> --%>
-								<a href="<%=basePath%>user_setRole">设置角色</a>
+								<a href="<%=basePath%>user_detail">查看</a>
+								<a href="<%=basePath%>user_save">修改</a>
 								<a href="#">初始化密码</a>
 								<a href="#">删除</a>
 							</td>

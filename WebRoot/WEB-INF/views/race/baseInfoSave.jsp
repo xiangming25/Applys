@@ -92,9 +92,6 @@
 		</div>
 		
 	</div>
-	<script type="text/javascript" src="<%=basePath %>plugins/ueditor/ueditor.config.js"></script>
-	<script type="text/javascript" src="<%=basePath %>plugins/ueditor/ueditor.all.min.js"></script>
-	<script type="text/javascript">
-		var ue = UE.getEditor('raceDesc');
-	</script>
+	
+	<script type="text/javascript" src="<%=basePath %>js/require.js" data-main="<%=basePath %>js/race/raceBaseInfoAdd.js"></script>
 <%@include file="/WEB-INF/template/footer.jsp" %>
