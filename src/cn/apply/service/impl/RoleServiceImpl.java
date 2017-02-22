@@ -7,14 +7,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import cn.apply.base.BaseServiceImpl;
-import cn.apply.domain.RaceGrade;
-import cn.apply.domain.RaceList;
-import cn.apply.service.RaceGradeService;
-import cn.apply.service.RaceService;
+import cn.apply.domain.Role;
+import cn.apply.service.RoleService;
 
 @Service
 @Transactional
-public class RaceServiceImpl extends BaseServiceImpl<RaceList> implements RaceService {
+public class RoleServiceImpl extends BaseServiceImpl<Role> implements RoleService {
 
 	@Resource
 	SessionFactory sessionFactory;

@@ -59,8 +59,43 @@
 .operation{
 	float: right;
 }
+.operation .search-group{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 30px;
+	height: 27px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.operation .search-group input{
+	height: 27px;
+	line-height: 27px;
+	outline: none;
+	width: 280px;
+	padding: 0 85px 0 12px;
+	font-size: 12px;
+}
+.operation .search-group button{
+	position: absolute;
+	width: 80px;
+	right: 0;
+	top: 0;
+	background-color: #10A6E2;
+	color: #ffffff;
+	border: none;
+	height: 27px;
+	line-height: 27px;
+	cursor: pointer;
+	font-size: 12px;
+}
+.operation .search-group button i{
+	margin-right: 4px;
+	font-size: 12px;
+}
 .operation .delete{
 	display: inline-block;
+	vertical-align: middle;
 	color: #10A6E2;
 	border: 1px solid #10A6E2;
 	padding: 5px 12px;
@@ -72,6 +107,7 @@
 }
 .operation .create{
 	display: inline-block;
+	vertical-align: middle;
 	background-color: #10A6E2;
 	color: #ffffff;
 	border: 1px solid #10A6E2;
