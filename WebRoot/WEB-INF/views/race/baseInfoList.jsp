@@ -80,4 +80,5 @@
 		</div>
 		
 	</div>
+	<script type="text/javascript" src="/Applys/js/require.js" data-main="/Applys/js/race/raceList.js"></script>
 <%@include file="/WEB-INF/template/footer.jsp" %>
